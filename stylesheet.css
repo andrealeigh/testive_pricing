@@ -1,0 +1,12 @@
+/* css here */
+
+
+.pricing-plans-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.coaching-plan-row {
+    display: flex;
+    flex-direction: row;
+}
