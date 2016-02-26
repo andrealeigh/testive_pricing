@@ -1,0 +1,177 @@
+/* mixins */
+
+@mixin flex {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+}
+
+@mixin flex-align ($direction: center) {
+    -webkit-align-items: $direction;
+    -ms-align-items: $direction;
+    -moz-align-items: $direction;
+    align-items: $direction;
+}
+
+@mixin flex-direction ($type: row) {
+    -webkit-flex-direction: $type;
+    -ms-flex-direction: $type;
+    -moz-flex-direction: $type;
+    flex-direction: $type;
+}
+
+@mixin flex-justify ($direction: center) {
+    -webkit-justify-content: $direction;
+    -ms-justify-content: $direction;
+    -moz-justify-content: $direction;
+    justify-content: $direction;
+}
+
+/* mixin for smiley faces in pricing section */
+
+@mixin plan-item-smiley ($image: '../images/checkmark-orange.svg') {
+    li:before {
+        background-image: url($image);
+        background-size:contain;
+        content:'';
+        height: 13px;
+        left: 5px;
+        margin-top: 5px;
+        position:absolute;
+        width: 13px;
+    }
+    position: relative;
+    max-width: 400px;
+    ul {
+        margin-left: 30px;
+    }
+}
+
+
+/* pricing page styles */
+
+body {
+    font-family: Roboto, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.pricing-hero {
+    background-color: #2C3E50;
+    padding: 125px;
+    .pricing-hero-text {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0 auto;
+    max-width: 950px;
+    text-align: center;
+    }
+    .blue-bold-text {
+        color: #29ABE2;
+        font-weight: 700;
+    }
+}
+
+.pricing-offer {
+    color: #ffffff;
+    background-color: #29ABE2;
+    padding: 50px;
+    margin: 0 auto;
+    .pricing-offer-text {
+        max-width: 950px;
+    }
+    .navy-large-text {
+        color: #2C3E50;
+        font-size: 22px;
+        font-weight: 700;
+    }
+}
+
+.row-header {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 35px;
+    text-align: center;
+}
+
+.pricing-plans {
+    @include flex;
+    @include flex-direction(column);
+    @include flex-align(center);
+    background-color: #ffffff;
+    color: #2C3E50;
+    padding: 50px;
+    .pricing-plans-row {
+        @include flex;
+        @include flex-direction(row);
+    }
+    .pricing-plans-row:first-of-type {
+        margin-bottom: 20px;
+    }
+    .pricing-column {
+        @include plan-item-smiley('../images/checkmark-orange.svg');
+        margin: 25px;
+        max-width: 285px;
+    }
+    .plan-header {
+        border-bottom: solid 1px #F7931E;
+        color: #F7931E;
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+    .plan-item {
+        margin-bottom: 5px;
+    }
+    .most-popular {
+        color: #29ABE2;
+        font-size: 12px;
+        font-weight: 700;
+        padding-left: 5px;
+        text-align: center;
+    }
+    .last-pricing-column {
+        @include plan-item-smiley('../images/checkmark-blue.svg');
+        margin: 25px;
+        max-width: 285px;
+        .plan-header {
+            border-bottom: solid 2px #29ABE2;
+            color: #29ABE2;
+            font-weight: 700;
+        }
+
+    }
+}
+
+.coaching-info {
+    background-color: #2C3E50;
+    color: #ffffff;
+    padding: 50px;
+    .coaching-plan-row {
+        @include flex;
+        @include flex-direction(row);
+        @include flex-justify(center);
+    }
+    .coaching-plan-column {
+        @include flex;
+        @include flex-direction(column);
+        @include flex-align(center);
+        margin: 25px;
+        max-width: 275px;
+        text-align: center;
+    }
+    .coaching-column-header {
+        color: #29ABE2;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+    }
+    .coaching-text {
+        font-weight: 300;
+    }
+}

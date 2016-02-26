@@ -1,0 +1,161 @@
+/* mixins */
+/* mixin for smiley faces in pricing section */
+/* pricing page styles */
+body {
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  margin: 0; }
+
+.pricing-hero {
+  background-color: #2C3E50;
+  padding: 125px; }
+  .pricing-hero .pricing-hero-text {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0 auto;
+    max-width: 950px;
+    text-align: center; }
+  .pricing-hero .blue-bold-text {
+    color: #29ABE2;
+    font-weight: 700; }
+
+.pricing-offer {
+  color: #ffffff;
+  background-color: #29ABE2;
+  padding: 50px;
+  margin: 0 auto; }
+  .pricing-offer .pricing-offer-text {
+    max-width: 950px; }
+  .pricing-offer .navy-large-text {
+    color: #2C3E50;
+    font-size: 22px;
+    font-weight: 700; }
+
+.row-header {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 35px;
+  text-align: center; }
+
+.pricing-plans {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #2C3E50;
+  padding: 50px; }
+  .pricing-plans .pricing-plans-row {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row; }
+  .pricing-plans .pricing-plans-row:first-of-type {
+    margin-bottom: 20px; }
+  .pricing-plans .pricing-column {
+    position: relative;
+    max-width: 400px;
+    margin: 25px;
+    max-width: 285px; }
+    .pricing-plans .pricing-column li:before {
+      background-image: url("../images/checkmark-orange.svg");
+      background-size: contain;
+      content: '';
+      height: 13px;
+      left: 5px;
+      margin-top: 5px;
+      position: absolute;
+      width: 13px; }
+    .pricing-plans .pricing-column ul {
+      margin-left: 30px; }
+  .pricing-plans .plan-header {
+    border-bottom: solid 1px #F7931E;
+    color: #F7931E;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    text-align: center; }
+  .pricing-plans .plan-item {
+    margin-bottom: 5px; }
+  .pricing-plans .most-popular {
+    color: #29ABE2;
+    font-size: 12px;
+    font-weight: 700;
+    padding-left: 5px;
+    text-align: center; }
+  .pricing-plans .last-pricing-column {
+    position: relative;
+    max-width: 400px;
+    margin: 25px;
+    max-width: 285px; }
+    .pricing-plans .last-pricing-column li:before {
+      background-image: url("../images/checkmark-blue.svg");
+      background-size: contain;
+      content: '';
+      height: 13px;
+      left: 5px;
+      margin-top: 5px;
+      position: absolute;
+      width: 13px; }
+    .pricing-plans .last-pricing-column ul {
+      margin-left: 30px; }
+    .pricing-plans .last-pricing-column .plan-header {
+      border-bottom: solid 2px #29ABE2;
+      color: #29ABE2;
+      font-weight: 700; }
+
+.coaching-info {
+  background-color: #2C3E50;
+  color: #ffffff;
+  padding: 50px; }
+  .coaching-info .coaching-plan-row {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center; }
+  .coaching-info .coaching-plan-column {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    margin: 25px;
+    max-width: 275px;
+    text-align: center; }
+  .coaching-info .coaching-column-header {
+    color: #29ABE2;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    padding-bottom: 5px; }
+  .coaching-info .coaching-text {
+    font-weight: 300; }
