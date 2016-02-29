@@ -20,18 +20,6 @@ body {
     color: #29ABE2;
     font-weight: 700; }
 
-.pricing-offer {
-  color: #ffffff;
-  background-color: #29ABE2;
-  padding: 50px;
-  margin: 0 auto; }
-  .pricing-offer .pricing-offer-text {
-    max-width: 950px; }
-  .pricing-offer .navy-large-text {
-    color: #2C3E50;
-    font-size: 22px;
-    font-weight: 700; }
-
 .row-header {
   font-size: 24px;
   font-weight: 700;
@@ -63,8 +51,6 @@ body {
     -ms-flex-direction: row;
     -moz-flex-direction: row;
     flex-direction: row; }
-  .pricing-plans .pricing-plans-row:first-of-type {
-    margin-bottom: 20px; }
   .pricing-plans .pricing-column {
     position: relative;
     max-width: 400px;
@@ -82,41 +68,40 @@ body {
     .pricing-plans .pricing-column ul {
       margin-left: 30px; }
   .pricing-plans .plan-header {
-    border-bottom: solid 1px #F7931E;
+    border-bottom: solid 2px #F7931E;
     color: #F7931E;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 15px;
     padding-bottom: 5px;
     text-align: center; }
   .pricing-plans .plan-item {
     margin-bottom: 5px; }
-  .pricing-plans .most-popular {
+  .pricing-plans .bold-plan-text {
+    font-weight: 700; }
+  .pricing-plans .indecision-column {
+    max-width: 950px; }
+  .pricing-plans .indecision-header {
+    border-bottom: solid 2px #29ABE2;
     color: #29ABE2;
-    font-size: 12px;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 30px; }
+  .pricing-plans .indecision-list {
+    padding-left: 30px;
+    width: 1005px; }
+
+.pricing-offer {
+  background-color: #29ABE2;
+  padding: 50px; }
+  .pricing-offer .pricing-offer-header {
+    color: #ffffff;
+    font-size: 22px;
     font-weight: 700;
-    padding-left: 5px;
     text-align: center; }
-  .pricing-plans .last-pricing-column {
-    position: relative;
-    max-width: 400px;
-    margin: 25px;
-    max-width: 285px; }
-    .pricing-plans .last-pricing-column li:before {
-      background-image: url("../images/checkmark-blue.svg");
-      background-size: contain;
-      content: '';
-      height: 13px;
-      left: 5px;
-      margin-top: 5px;
-      position: absolute;
-      width: 13px; }
-    .pricing-plans .last-pricing-column ul {
-      margin-left: 30px; }
-    .pricing-plans .last-pricing-column .plan-header {
-      border-bottom: solid 2px #29ABE2;
-      color: #29ABE2;
-      font-weight: 700; }
 
 .coaching-info {
   background-color: #2C3E50;
@@ -153,9 +138,12 @@ body {
     text-align: center; }
   .coaching-info .coaching-column-header {
     color: #29ABE2;
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 15px;
-    padding-bottom: 5px; }
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 10px; }
+  .coaching-info .coaching-images {
+    margin: 0 auto 15px auto;
+    max-height: 50px;
+    max-width: 75px; }
   .coaching-info .coaching-text {
     font-weight: 300; }

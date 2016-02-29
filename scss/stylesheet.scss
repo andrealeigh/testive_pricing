@@ -30,9 +30,9 @@
 
 /* mixin for smiley faces in pricing section */
 
-@mixin plan-item-smiley ($image: '../images/checkmark-orange.svg') {
+@mixin plan-item-smiley {
     li:before {
-        background-image: url($image);
+        background-image: url('../images/checkmark-orange.svg');
         background-size:contain;
         content:'';
         height: 13px;
@@ -74,21 +74,6 @@ body {
     }
 }
 
-.pricing-offer {
-    color: #ffffff;
-    background-color: #29ABE2;
-    padding: 50px;
-    margin: 0 auto;
-    .pricing-offer-text {
-        max-width: 950px;
-    }
-    .navy-large-text {
-        color: #2C3E50;
-        font-size: 22px;
-        font-weight: 700;
-    }
-}
-
 .row-header {
     font-size: 24px;
     font-weight: 700;
@@ -107,19 +92,16 @@ body {
         @include flex;
         @include flex-direction(row);
     }
-    .pricing-plans-row:first-of-type {
-        margin-bottom: 20px;
-    }
     .pricing-column {
-        @include plan-item-smiley('../images/checkmark-orange.svg');
+        @include plan-item-smiley;
         margin: 25px;
         max-width: 285px;
     }
     .plan-header {
-        border-bottom: solid 1px #F7931E;
+        border-bottom: solid 2px #F7931E;
         color: #F7931E;
         font-size: 18px;
-        font-weight: 300;
+        font-weight: 400;
         margin-bottom: 15px;
         padding-bottom: 5px;
         text-align: center;
@@ -127,23 +109,36 @@ body {
     .plan-item {
         margin-bottom: 5px;
     }
-    .most-popular {
-        color: #29ABE2;
-        font-size: 12px;
+    .bold-plan-text {
         font-weight: 700;
-        padding-left: 5px;
-        text-align: center;
     }
-    .last-pricing-column {
-        @include plan-item-smiley('../images/checkmark-blue.svg');
-        margin: 25px;
-        max-width: 285px;
-        .plan-header {
-            border-bottom: solid 2px #29ABE2;
-            color: #29ABE2;
-            font-weight: 700;
-        }
+    .indecision-column {
+        max-width: 950px;
+    }
+    .indecision-header {
+        border-bottom: solid 2px #29ABE2;
+        color: #29ABE2;
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        padding-bottom: 5px;
+        padding-left: 30px;
+    }
+    .indecision-list {
+        padding-left: 30px;
+        width: 1005px;
+    }
+}
 
+.pricing-offer {
+    background-color: #29ABE2;
+    padding: 50px;
+    .pricing-offer-header {
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 700;
+        text-align: center;
     }
 }
 
@@ -166,10 +161,14 @@ body {
     }
     .coaching-column-header {
         color: #29ABE2;
-        font-size: 18px;
-        font-weight: 400;
-        margin-bottom: 15px;
-        padding-bottom: 5px;
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+    .coaching-images {
+        margin: 0 auto 15px auto;
+        max-height: 50px;
+        max-width: 75px;
     }
     .coaching-text {
         font-weight: 300;
