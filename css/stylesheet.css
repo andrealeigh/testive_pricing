@@ -54,8 +54,13 @@ body {
   .pricing-plans .pricing-column {
     position: relative;
     max-width: 400px;
+    position: relative;
+    max-width: 400px;
     margin: 25px;
-    max-width: 285px; }
+    max-width: 285px;
+    border: 1px solid #eaeaea;
+    padding: 10px;
+    background-color: #f9f9f9; }
     .pricing-plans .pricing-column li:before {
       background-image: url("../images/checkmark-orange.svg");
       background-size: contain;
@@ -68,17 +73,32 @@ body {
     .pricing-plans .pricing-column ul {
       margin-left: 30px; }
   .pricing-plans .plan-header {
-    border-bottom: solid 2px #F7931E;
-    color: #F7931E;
+    border: solid 10px #F7931E;
+    color: #ffffff;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 15px;
-    padding-bottom: 5px;
-    text-align: center; }
+    text-align: center;
+    background-color: #F7931E; }
+  .pricing-plans .plan-blurb {
+    border-bottom: 1px solid #eaeaea;
+    font-weight: 300;
+    padding-bottom: 10px; }
+  .pricing-plans .plan-subheader {
+    font-weight: 700;
+    margin-bottom: 5px; }
+  .pricing-plans .plan-list {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaeaea; }
   .pricing-plans .plan-item {
     margin-bottom: 5px; }
   .pricing-plans .bold-plan-text {
     font-weight: 700; }
+  .pricing-plans .individual-plan-price {
+    text-align: center;
+    font-weight: 700;
+    color: #F7931E;
+    padding-top: 10px; }
   .pricing-plans .indecision-column {
     max-width: 950px; }
   .pricing-plans .indecision-header {
