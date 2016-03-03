@@ -35,10 +35,6 @@ body {
   -ms-flex-direction: column;
   -moz-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  -moz-align-items: center;
-  align-items: center;
   background-color: #ffffff;
   color: #2C3E50;
   padding: 50px; }
@@ -63,7 +59,16 @@ body {
     -webkit-align-items: flex-end;
     -ms-align-items: flex-end;
     -moz-align-items: flex-end;
-    align-items: flex-end; }
+    align-items: flex-end;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center; }
+  .pricing-plans .pricing-plans-row:nth-of-type(2) {
+    -webkit-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    justify-content: flex-start; }
   .pricing-plans .pricing-widget {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -145,16 +150,14 @@ body {
     -ms-flex-direction: column;
     -moz-flex-direction: column;
     flex-direction: column;
-    max-width: 950px; }
+    margin: 50px 50px 0px 50px;
+    width: 1179px; }
   .pricing-plans .indecision-header {
     border-bottom: solid 2px #29ABE2;
     color: #29ABE2;
     font-size: 30px;
     font-weight: 400;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    padding-bottom: 5px;
-    padding-left: 30px; }
+    padding: 0px 0px 5px 30px; }
   .pricing-plans .indecision-options-row {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -163,7 +166,25 @@ body {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     -moz-flex-direction: row;
-    flex-direction: row; }
+    flex-direction: row;
+    margin: 35px 0 0 30px; }
+  .pricing-plans .indecision-widget {
+    border: 1px solid #eaeaea;
+    padding: 50px 60px;
+    margin-right: 90px; }
+  .pricing-plans .indecision-button {
+    background-color: #F7931E;
+    border-radius: 5px;
+    color: #ffffff;
+    max-width: 150px;
+    margin: 0 auto 10px auto;
+    padding: 5px;
+    text-align: center; }
+  .pricing-plans .indecision-hidden-row {
+    display: none;
+    border: 1px solid #eaeaea;
+    padding: 50px;
+    margin-left: 30px; }
 
 /* .pricing-offer {
     background-color: #29ABE2;
@@ -206,7 +227,7 @@ body {
     -ms-align-items: center;
     -moz-align-items: center;
     align-items: center;
-    margin: 25px;
+    margin: 0px 25px;
     max-width: 275px;
     text-align: center; }
   .coaching-info .coaching-column-header {

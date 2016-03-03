@@ -88,7 +88,6 @@ body {
 .pricing-plans {
     @include flex;
     @include flex-direction(column);
-    @include flex-align(center);
     background-color: #ffffff;
     color: #2C3E50;
     padding: 50px;
@@ -106,6 +105,10 @@ body {
         @include flex;
         @include flex-direction(row);
         @include flex-align(flex-end);
+        @include flex-justify(center);
+    }
+    .pricing-plans-row:nth-of-type(2) {
+        @include flex-justify(flex-start);
     }
     .pricing-widget {
         @include flex;
@@ -174,21 +177,40 @@ body {
     .indecision-column {
         @include flex;
         @include flex-direction(column);
-        max-width: 950px;
+        margin: 50px 50px 0px 50px;
+        width: 1179px;
     }
     .indecision-header {
         border-bottom: solid 2px #29ABE2;
         color: #29ABE2;
         font-size: 30px;
         font-weight: 400;
-        margin-bottom: 15px;
-        margin-top: 15px;
-        padding-bottom: 5px;
-        padding-left: 30px;
+        padding: 0px 0px 5px 30px;
     }
     .indecision-options-row {
         @include flex;
         @include flex-direction(row);
+        margin: 35px 0 0 30px;
+    }
+    .indecision-widget {
+        border: 1px solid #eaeaea;
+        padding: 50px 60px;
+        margin-right: 90px;
+        }
+    .indecision-button {
+        background-color: #F7931E;
+        border-radius: 5px;
+        color: #ffffff;
+        max-width: 150px;
+        margin: 0 auto 10px auto;
+        padding: 5px;
+        text-align: center;
+    }
+    .indecision-hidden-row {
+        display: none;
+        border: 1px solid #eaeaea;
+        padding: 50px;
+        margin-left: 30px;
     }
 }
 
@@ -216,7 +238,7 @@ body {
         @include flex;
         @include flex-direction(column);
         @include flex-align(center);
-        margin: 25px;
+        margin: 0px 25px;
         max-width: 275px;
         text-align: center;
     }
