@@ -1,7 +1,7 @@
 /* mixins */
 /* mixin for smiley faces in pricing section */
 /* pricing page styles */
-body {
+.pricing-page {
   font-family: Roboto, sans-serif;
   line-height: 1.5;
   margin: 0; }
@@ -76,7 +76,7 @@ body {
     display: flex;
     border: 1px solid #eaeaea;
     box-shadow: 0px 0px 10px 1px #eaeaea;
-    padding: 10px;
+    padding: 0;
     margin: 0 20px; }
   .pricing-plans .pricing-widget:nth-of-type(2) {
     -webkit-flex-direction: column;
@@ -92,6 +92,7 @@ body {
     position: relative;
     max-width: 400px;
     max-width: 310px;
+    padding: 10px;
     position: relative; }
     .pricing-plans .pricing-column li:before {
       background-image: url("../images/checkmark-orange.svg");
@@ -137,10 +138,13 @@ body {
     background-color: #F7931E;
     border-radius: 5px;
     color: #ffffff;
+    display: block;
     max-width: 150px;
     margin: 0 auto 10px auto;
     padding: 5px;
     text-align: center; }
+    .pricing-plans .pricing-button:hover {
+      background-color: #29ABE2; }
   .pricing-plans .indecision-column {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -150,11 +154,9 @@ body {
     -ms-flex-direction: column;
     -moz-flex-direction: column;
     flex-direction: column;
-    margin: 50px 50px 0px 50px;
-    width: 1179px; }
+    margin: 50px 50px 0px 50px; }
   .pricing-plans .indecision-header {
-    border-bottom: solid 2px #29ABE2;
-    color: #29ABE2;
+    border-bottom: solid 2px #2C3E50;
     font-size: 30px;
     font-weight: 400;
     padding: 0px 0px 5px 30px; }
@@ -166,12 +168,12 @@ body {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     -moz-flex-direction: row;
-    flex-direction: row;
-    margin: 35px 0 0 30px; }
+    flex-direction: row; }
   .pricing-plans .indecision-widget {
     border: 1px solid #eaeaea;
-    padding: 50px 60px;
-    margin-right: 90px; }
+    box-shadow: 0px 0px 10px 1px #eaeaea;
+    margin-bottom: 20px;
+    padding: 40px; }
   .pricing-plans .indecision-button {
     background-color: #F7931E;
     border-radius: 5px;
@@ -180,11 +182,84 @@ body {
     margin: 0 auto 10px auto;
     padding: 5px;
     text-align: center; }
+    .pricing-plans .indecision-button:hover {
+      background-color: #29ABE2; }
   .pricing-plans .indecision-hidden-row {
     display: none;
     border: 1px solid #eaeaea;
     padding: 50px;
     margin-left: 30px; }
+  .pricing-plans .indecision-text {
+    font-weight: 700;
+    padding-bottom: 15px;
+    text-align: center; }
+  .pricing-plans .options-text-1 {
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 10px; }
+  .pricing-plans .options-text {
+    font-size: 21px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    text-align: center; }
+  .pricing-plans .cs-placeholder {
+    width: 450px; }
+  .pricing-plans .signup-form {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    -moz-align-items: center;
+    align-items: center; }
+  .pricing-plans select {
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    box-sizing: content-box;
+    color: #F7931E;
+    font-size: .85em;
+    font-weight: 400;
+    height: 37px;
+    padding: 10px;
+    width: 220px; }
+  .pricing-plans input {
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding: 12px 10px;
+    margin: 10px 0;
+    width: 200px; }
+  .pricing-plans .signup-subheader {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-align-self: flex-start;
+    -ms-align-self: flex-start;
+    -moz-align-self: flex-start;
+    align-self: flex-start;
+    font-size: 12px;
+    margin-left: 65px;
+    padding: 5px 0px; }
+  .pricing-plans .hs-form {
+    margin-bottom: 0; }
+  .pricing-plans .hs-form .hs-button {
+    background-color: #F7931E;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-shadow: none;
+    font-weight: 700;
+    box-shadow: none;
+    border: none;
+    width: 220px;
+    text-transform: uppercase; }
+    .pricing-plans .hs-form .hs-button:hover {
+      background-color: #29ABE2; }
 
 /* .pricing-offer {
     background-color: #29ABE2;

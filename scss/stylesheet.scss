@@ -55,7 +55,7 @@
 
 /* pricing page styles */
 
-body {
+.pricing-page {
     font-family: Roboto, sans-serif;
     line-height: 1.5;
     margin: 0;
@@ -114,7 +114,7 @@ body {
         @include flex;
         border: 1px solid #eaeaea;
         box-shadow: 0px 0px 10px 1px #eaeaea;
-        padding: 10px;
+        padding: 0;
         margin: 0 20px;
     }
     .pricing-widget:nth-of-type(2) {
@@ -125,6 +125,7 @@ body {
     .pricing-column {
         @include plan-item-smiley;
         max-width: 310px;
+        padding:10px;
         position: relative;
     }
     .plan-header {
@@ -169,20 +170,22 @@ body {
         background-color: #F7931E;
         border-radius: 5px;
         color: #ffffff;
+        display:block;
         max-width: 150px;
         margin: 0 auto 10px auto;
         padding: 5px;
         text-align: center;
+        &:hover {
+            background-color: #29ABE2;
+        }
     }
     .indecision-column {
         @include flex;
         @include flex-direction(column);
         margin: 50px 50px 0px 50px;
-        width: 1179px;
     }
     .indecision-header {
-        border-bottom: solid 2px #29ABE2;
-        color: #29ABE2;
+        border-bottom: solid 2px #2C3E50;
         font-size: 30px;
         font-weight: 400;
         padding: 0px 0px 5px 30px;
@@ -190,13 +193,13 @@ body {
     .indecision-options-row {
         @include flex;
         @include flex-direction(row);
-        margin: 35px 0 0 30px;
     }
     .indecision-widget {
         border: 1px solid #eaeaea;
-        padding: 50px 60px;
-        margin-right: 90px;
-        }
+        box-shadow: 0px 0px 10px 1px #eaeaea;
+        margin-bottom: 20px;
+        padding: 40px;
+    }
     .indecision-button {
         background-color: #F7931E;
         border-radius: 5px;
@@ -205,12 +208,85 @@ body {
         margin: 0 auto 10px auto;
         padding: 5px;
         text-align: center;
+        &:hover {
+            background-color: #29ABE2;
+        }
     }
     .indecision-hidden-row {
         display: none;
         border: 1px solid #eaeaea;
         padding: 50px;
         margin-left: 30px;
+    }
+    .indecision-text {
+        font-weight: 700;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    .options-text-1 {
+        border-bottom: 1px solid #eaeaea;
+        margin-bottom: 10px;
+    }
+    .options-text {
+        font-size: 21px;
+        font-weight: 700;
+        padding-bottom: 10px;
+        text-align: center;
+
+    }
+    .cs-placeholder {
+        width: 450px;
+    }
+    .signup-form {
+        @include flex;
+        @include flex-direction(column);
+        @include flex-align(center);
+    }
+    select {
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+        box-sizing: content-box;
+        color: #F7931E;
+        font-size: .85em;
+        font-weight: 400;
+        height: 37px;
+        padding: 10px;
+        width: 220px;
+
+    }
+    input {
+        border: 1px solid #eaeaea;
+        border-radius: 5px;
+        padding: 12px 10px;
+        margin: 10px 0;
+        width: 200px;
+
+    }
+    .signup-subheader {
+        @include flex;
+        @include flex-align-self(flex-start);
+        font-size: 12px;
+        margin-left: 65px;
+        padding: 5px 0px;
+    }
+    .hs-form {
+        margin-bottom: 0;
+    }
+    .hs-form .hs-button {
+        background-color: #F7931E;
+        border-radius: 5px;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-shadow: none;
+        font-weight: 700;
+        box-shadow: none;
+        border: none;
+        width: 220px;
+        text-transform: uppercase;
+        &:hover {
+            background-color: #29ABE2;
+        }
     }
 }
 
@@ -225,6 +301,7 @@ body {
     }
 }
  */
+
 .coaching-info {
     background-color: #2C3E50;
     color: #ffffff;
